@@ -243,6 +243,10 @@ html, body {
         background-image: url('../images/small-john.jpg');
     }
 
+    .sub-label{
+        padding: 10px 10px;
+    }
+
     .main-menu {
         visibility:hidden;
         width: 0px;
