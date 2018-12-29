@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <head>
+<title>Photo Portfolio</title>
 <meta charset='utf-8' />
 <meta name='viewport'
       content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-<title>Photo Portfolio</title>
-<link rel='stylesheet' href='css/styles.css' />
 <meta name='theme-color' content='#083358' />       <!-- Colorized tab on smartphone and Tablet -->
+<link rel='stylesheet' href='css/styles.css' />
 <link rel='icon' sizes='192x192' href='images/browser-logo.png' />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -13,7 +13,7 @@
 <body>
 <header class='main-header'>
     <div class='logo'>
-            <i class="material-icons" style='color: white; margin-left: 5px;'>photo_camera</i>
+            <i class="material-icons" style='color: white;'>photo_camera</i>
             <div class='logo-caption'>Photo Portfolio</div>
     </div>
     <div class='small-menu'>
@@ -30,11 +30,59 @@
 
 <section class='home'>
         <div class='main-label'>John Doe</div>
-        <div class='sub-label'>Photographer&Web designer</div>
+        <div class='sub-label'>Photographer & Web designer</div>
 </section>
 
 <section class='info-block'> 
+    <div class='info-block-image'>
+        <img src='images/john-doe.jpg' class='block-image'/>
+    </div>
+    <div class='info-block-item bg-1'>
+        <h1 class='info-block-h1'>Hi! My name is John Doe.</h1>
+        <h2 class='info-block-h2'>A photographer and web designer.</h2>
+        <p class='info-block-p'>I've started my carreer as phtographer since 1998.
+        Been to a lot of places around the world, where I learned how to shoot landscapes,
+         nature, people and landscapes, portraits etc. Then in 2014 web design got my attention.
+         It was so interesting to learn that I decided to become a professional in it. And now 
+         I work as a full-time web designer and photographer.
+        </p>
+    </div>
+</section>
 
+<section class='card-block'>
+    <h1 class='card-block-h1'>My skills</h1>
+    <div class='card-container'>
+        <div class='card'>
+            <img src='images/camera.svg' class='card-image' />
+            <h2 class='card-h2'>Camera</h2>
+            <p class='card-text'>dvkbkbjksdbvjkbsd
+                vhjbvksdbvjkbdsjkbvjksdbvjbsdjbvjskb
+                rjbvbdsjkvbjksdbvjkbsdjvbjbsjbfjkebs
+                vkrbevbjkerbvjbjkvbdfjkbvjkdbvjkdbv
+            </p>
+        </div>
+
+        <div class='card'>
+            <img src='images/photoshop.svg' class='card-image' />
+            <h2 class='card-h2'>Photoshop</h2>
+            <p class='card-text'>dvkbkbjksdbvjkbsd
+                vhjbvksdbvjkbdsjkbvjksdbvjbsdjbvjskb
+                rjbvbdsjkvbjksdbvjkbsdjvbjbsjbfjkebs
+                vkrbevbjkerbvjbjkvbdfjkbvjkdbvjkdbv
+            </p>
+        </div>
+
+        <div class='card'>
+            <img src='images/website.svg' class='card-image' />
+            <h2 class='card-h2'>Web design</h2>
+            <p class='card-text'>dvkbkbjksdbvjkbsd
+                vhjbvksdbvjkbdsjkbvjksdbvjbsdjbvjskb
+                rjbvbdsjkvbjksdbvjkbsdjvbjbsjbfjkebs
+                vkrbevbjkerbvjbjkvbdfjkbvjkdbvjkdbv
+            </p>
+        </div>
+
+    </div>
 </section>
 
 <script src='js/main.js'></script>
