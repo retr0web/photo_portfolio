@@ -15,6 +15,9 @@ html, body {
   width: 100%;
   background-color: #005096;
   display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   justify-content: space-between;
   align-items: center;
   position:fixed;
@@ -22,6 +25,9 @@ html, body {
 
 .logo{
     display:flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     padding:14px 22px;
     margin: 5px 5px;
 }
@@ -41,10 +47,13 @@ html, body {
 }
 
 .main-menu{
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-end;
-  align-self: flex-end;
+    list-style-type: none;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: flex-end;
+    align-self: flex-end;
 }
 
 .main-menu li{
@@ -73,6 +82,9 @@ html, body {
     width: 100%;
     height: 100%;
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-direction:column;
     justify-content: center;
     align-items: center;
@@ -103,6 +115,9 @@ html, body {
 .info-block{
     width: 100%;
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-wrap: wrap;
 }
 
@@ -148,7 +163,7 @@ html, body {
     font-size: 18px;
     font-family: fredoka, Arial;
     padding: 10px;
-    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .card-block{
@@ -176,6 +191,9 @@ html, body {
     width: 100%;
     min-height: 520px;
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -185,6 +203,9 @@ html, body {
     width: 30%;
     min-height: 400px;
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -222,7 +243,7 @@ html, body {
     color: #0b70c5;
     font-size: 16px;
     font-family: fredoka, Arial;
-    word-wrap: break-word;
+    word-break: break-all;
     width: 90%;
     padding-bottom: 10px;
 }
@@ -232,7 +253,7 @@ html, body {
     color: #fc3c3c;
     font-size: 16px;
     font-family: fredoka, Arial;
-    word-wrap: break-word;
+    word-break: break-all;
     width: 90%;
     padding-bottom: 10px;
 }
@@ -260,6 +281,10 @@ html, body {
 
     .small-menu{
         order: 1;
+        -webkit-box-ordinal-group: 1;  
+        -moz-box-ordinal-group: 1;     
+        -ms-flex-order: 1;     
+        -webkit-order: 1;
     }
 
     .info-block-item, .info-block-image {
