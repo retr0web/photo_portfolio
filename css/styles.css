@@ -295,13 +295,15 @@ background-image: linear-gradient(135deg, #0c90fb 30%, #fc3c3c 72%);
           padding: 10px 10px;
       }
   
-      .main-menu {
+      .main-nav {
           visibility:hidden;
           width: 0px;
           height: 0px;
           order: 0;
           -webkit-order: 0;
           -ms-flex-order: 0;
+          position: absolute;
+          z-index: -1;
       }
   
       .logo{
