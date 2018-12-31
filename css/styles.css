@@ -14,14 +14,25 @@
   .main-header{
     width: 100%;
     background-color: #005096;
-    display: flex;
-    justify-content: space-between;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+	display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+	justify-content:space-between;
     align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     position:fixed;
   }
   
   .logo{
       display:flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       padding:14px 22px;
       margin: 5px 5px;
   }
@@ -35,6 +46,8 @@
   
   .small-menu{
       align-self: flex-end;
+      -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
       color: white;
       padding:14px 22px;
       margin: 5px 5px;
@@ -43,8 +56,14 @@
   .main-menu{
     list-style-type: none;
     display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
     align-self: flex-end;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
   }
   
   .main-menu li{
@@ -73,9 +92,17 @@
       width: 100%;
       height: 100%;
       display: flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       flex-direction:column;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
       justify-content: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
       align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
   }
   
   .main-label{
@@ -103,7 +130,11 @@
   .info-block{
       width: 100%;
       display: flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
   }
   
   .info-block-item{
@@ -176,18 +207,34 @@
       width: 100%;
       min-height: 520px;
       display: flex;
-      justify-content: space-around;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+	  justify-content:space-around;
       align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
   }
   
   .card{
       width: 30%;
       min-height: 400px;
       display: flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       justify-content: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
       align-items: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
       flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
   }
   
   .card-image{
@@ -236,6 +283,10 @@
       width: 90%;
       padding-bottom: 10px;
   }
+
+  /* background-color: #0c90fb;
+background-image: linear-gradient(135deg, #0c90fb 30%, #fc3c3c 72%);
+*/
   
   
   @media only screen and (max-width:490px) {
@@ -252,6 +303,8 @@
           width: 0px;
           height: 0px;
           order: 0;
+          -webkit-order: 0;
+          -ms-flex-order: 0;
       }
   
       .logo{
@@ -260,6 +313,8 @@
   
       .small-menu{
           order: 1;
+          -webkit-order: 1;
+          -ms-flex-order: 1;
       }
   
       .info-block-item, .info-block-image {
