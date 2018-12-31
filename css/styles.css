@@ -1,346 +1,317 @@
 *{
-    margin:0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  
-  html, body {
-      margin: 0;
-      height:100%;
-      width:100%;
-      padding:0;
-  }
-  
-  .main-header{
-    width: 100%;
-    background-color: #005096;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height:100%;
+    width:100%;
+    padding:0;
+}
+
+.main-header{
+  width: 100%;
+  background-color: #005096;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  align-items: center;
+  position:fixed;
+}
+
+.logo{
+    display:flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    padding:14px 22px;
+    margin: 5px 5px;
+}
+
+.logo-caption{
+    font-size: 18px;
+    font-family: fredoka, Arial;
+    padding-left: 5px;
+    color: white;
+}
+
+.small-menu{
+    align-self: flex-end;
+    color: white;
+    padding:14px 22px;
+    margin: 5px 5px;
+}
+
+.main-menu{
+    list-style-type: none;
     display: flex;
     display: -webkit-box;
+    display: -webkit-flex;
     display: -ms-flexbox;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position:fixed;
-  }
-  
-  .logo{
-      display:flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      padding:14px 22px;
-      margin: 5px 5px;
-  }
-  
-  .logo-caption{
-      font-size: 18px;
-      font-family: fredoka, Arial;
-      padding-left: 5px;
-      color: white;
-  }
-  
-  .small-menu{
-      -ms-flex-item-align: end;
-          align-self: flex-end;
-      color: white;
-      padding:14px 22px;
-      margin: 5px 5px;
-  }
-  
-  .main-menu{
-      list-style-type: none;
-      display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
-  }
-  
-  .main-menu li{
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+.main-menu li{
+  background-color: #005096;
+  padding: 14px 16px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  text-align:center;
+  font-size: 16px;
+  font-family: fredoka;
+  cursor: pointer;
+  margin: 5px 5px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.main-menu li:hover{
+  background-color: #0b70c5;
+}
+
+.home{
+    background-image: url(../images/wide-john.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-label{
     background-color: #005096;
-    padding: 14px 16px;
+    padding: 14px 36px;
     border-radius: 50px;
     color: white;
-    text-decoration: none;
-    text-align:center;
-    font-size: 16px;
+    font-size: 36px;
     font-family: fredoka;
-    cursor: pointer;
     margin: 5px 5px;
-    display: inline-block;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-  }
-  
-  .main-menu li:hover{
+    text-align: center;
+}
+
+.sub-label{
+    background-color: #005096;
+    padding: 14px 22px;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: fredoka;
+    margin: 5px 5px;
+    text-align: center;
+}
+
+.info-block{
+    width: 100%;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+}
+
+.info-block-item{
+    height: 520px;
+    width: 60%;
+}
+
+.info-block-image{
+    height: 520px;
+    width: 40%;
+}
+
+.bg-1{
     background-color: #0b70c5;
-  }
-  
-  .home{
-      background-image: url(../images/wide-john.jpg);
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      -webkit-box-orient:vertical;
-      -webkit-box-direction:normal;
-          -ms-flex-direction:column;
-              flex-direction:column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-  }
-  
-  .main-label{
-      background-color: #005096;
-      padding: 14px 36px;
-      border-radius: 50px;
-      color: white;
-      font-size: 36px;
-      font-family: fredoka;
-      margin: 5px 5px;
-      text-align: center;
-  }
-  
-  .sub-label{
-      background-color: #005096;
-      padding: 14px 22px;
-      border-radius: 50px;
-      color: white;
-      font-size: 20px;
-      font-family: fredoka;
-      margin: 5px 5px;
-      text-align: center;
-  }
-  
-  .info-block{
-      width: 100%;
-      display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  }
-  
-  .info-block-item{
-      height: 520px;
-      width: 60%;
-  }
-  
-  .info-block-image{
-      height: 520px;
-      width: 40%;
-  }
-  
-  .bg-1{
-      background-color: #0b70c5;
-  }
-  
-  .bg-2{
-      background-color: #fc3c3c;
-  }
-  
-  .block-image{
-      width: 100%;
-      height: 100%;
-  }
-  
-  .info-block-h1{
-      padding: 10px;
-      color: white;
-      font-size: 26px;
-      font-family: fredoka, Arial;
-  }
-  
-  .info-block-h2{
-      padding: 10px;
-      color: white;
-      font-size: 22px;
-      font-family: fredoka, Arial;
-  }
-  
-  .info-block-p{
-      color: white;
-      font-size: 18px;
-      font-family: fredoka, Arial;
-      padding: 10px;
-      word-break: break-all;
-  }
-  
-  .card-block{
-      width: 100%;
-      padding: 20px;
-  }
-  
-  .card-block-h1{
-      padding: 10px;
-      color: #0b70c5;
-      font-size: 36px;
-      font-family: fredoka, Arial;
-      text-align: center;  
-  }
-  
-  .card-block-h1-red{
-      padding: 10px;
-      color: #fc3c3c;
-      font-size: 36px;
-      font-family: fredoka, Arial;
-      text-align: center;  
-  }
-  
-  .card-container{
-      width: 100%;
-      min-height: 520px;
-      display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  }
-  
-  .card{
-      width: 30%;
-      min-height: 400px;
-      display: flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-  }
-  
-  .card-image{
-      width: 90%;
-      height: 200px;
-  }
-  
-  .card-image-rounded{
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-  }
-  
-  .card-h2{
-      padding: 10px;
-      color: #0b70c5;
-      font-size: 22px;
-      font-family: fredoka, Arial;
-      text-align: center;
-  }
-  
-  .card-h2-red{
-      padding: 10px;
-      color: #fc3c3c;
-      font-size: 22px;
-      font-family: fredoka, Arial;
-      text-align: center;
-  }
-  
-  .card-text{
-      text-align: center;
-      color: #0b70c5;
-      font-size: 16px;
-      font-family: fredoka, Arial;
-      word-break: break-all;
-      width: 90%;
-      padding-bottom: 10px;
-  }
-  
-  .card-text-red{
-      text-align: center;
-      color: #fc3c3c;
-      font-size: 16px;
-      font-family: fredoka, Arial;
-      word-break: break-all;
-      width: 90%;
-      padding-bottom: 10px;
-  }
-  
-  
-  @media only screen and (max-width:490px) {
-      .home{
-          background-image: url('../images/small-john.jpg');
-      }
-  
-      .sub-label{
-          padding: 10px 10px;
-      }
-  
-      .main-menu {
-          visibility:hidden;
-          width: 0px;
-          height: 0px;
-          -webkit-box-ordinal-group: 1;
-              -ms-flex-order: 0;
-                  order: 0;
-      }
-  
-      .logo{
-          padding: 14px 5px;
-      }
-  
-      .small-menu{
-          order: 1;
-          -webkit-box-ordinal-group: 1;  
-          -moz-box-ordinal-group: 1;     
-          -ms-flex-order: 1;     
-          -webkit-order: 1;
-      }
-  
-      .info-block-item, .info-block-image {
-          width: 100%;
-      }
-  
-      .card{
-          width: 100%;
-      }
-  }
-  
-  @media only screen and (min-width: 489px) and (max-width: 680px) {
-      .info-block-item, .info-block-image {
-          width: 50%;
-      }
-  
-      .card{
-          width: 100%;
-      }
-  }
-  
-  @media only screen and (min-width: 490px) {
-      .small-menu{
-          visibility:hidden;
-          width: 0px;
-          height: 0px;
-      }
-  }
-  
-  @font-face {
-      font-family: fredoka;
-      src: url(../fonts/FredokaOne-Regular.ttf);
-      font-display: swap;
-  }
+}
+
+.bg-2{
+    background-color: #fc3c3c;
+}
+
+.block-image{
+    width: 100%;
+    height: 100%;
+}
+
+.info-block-h1{
+    padding: 10px;
+    color: white;
+    font-size: 26px;
+    font-family: fredoka, Arial;
+}
+
+.info-block-h2{
+    padding: 10px;
+    color: white;
+    font-size: 22px;
+    font-family: fredoka, Arial;
+}
+
+.info-block-p{
+    color: white;
+    font-size: 18px;
+    font-family: fredoka, Arial;
+    padding: 10px;
+    word-break: break-all;
+}
+
+.card-block{
+    width: 100%;
+    padding: 20px;
+}
+
+.card-block-h1{
+    padding: 10px;
+    color: #0b70c5;
+    font-size: 36px;
+    font-family: fredoka, Arial;
+    text-align: center;  
+}
+
+.card-block-h1-red{
+    padding: 10px;
+    color: #fc3c3c;
+    font-size: 36px;
+    font-family: fredoka, Arial;
+    text-align: center;  
+}
+
+.card-container{
+    width: 100%;
+    min-height: 520px;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 30%;
+    min-height: 400px;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-image{
+    width: 90%;
+    height: 200px;
+}
+
+.card-image-rounded{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.card-h2{
+    padding: 10px;
+    color: #0b70c5;
+    font-size: 22px;
+    font-family: fredoka, Arial;
+    text-align: center;
+}
+
+.card-h2-red{
+    padding: 10px;
+    color: #fc3c3c;
+    font-size: 22px;
+    font-family: fredoka, Arial;
+    text-align: center;
+}
+
+.card-text{
+    text-align: center;
+    color: #0b70c5;
+    font-size: 16px;
+    font-family: fredoka, Arial;
+    word-break: break-all;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+.card-text-red{
+    text-align: center;
+    color: #fc3c3c;
+    font-size: 16px;
+    font-family: fredoka, Arial;
+    word-break: break-all;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width:490px) {
+    .home{
+        background-image: url('../images/small-john.jpg');
+    }
+
+    .sub-label{
+        padding: 10px 10px;
+    }
+
+    .main-menu {
+        visibility:hidden;
+        width: 0px;
+        height: 0px;
+        order: 0;
+    }
+
+    .logo{
+        padding: 14px 5px;
+    }
+
+    .small-menu{
+        order: 1;
+    }
+
+    .info-block-item, .info-block-image {
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 489px) and (max-width: 680px) {
+    .info-block-item, .info-block-image {
+        width: 50%;
+    }
+
+    .card{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 490px) {
+    .small-menu{
+        visibility:hidden;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@font-face {
+    font-family: fredoka;
+    src: url(../fonts/FredokaOne-Regular.ttf);
+    font-display: swap;
+}
