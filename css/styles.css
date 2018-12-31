@@ -15,9 +15,6 @@ html, body {
   width: 100%;
   background-color: #005096;
   display: flex;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   justify-content: space-between;
   align-items: center;
   position:fixed;
@@ -25,9 +22,6 @@ html, body {
 
 .logo{
     display:flex;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     padding:14px 22px;
     margin: 5px 5px;
 }
@@ -49,9 +43,6 @@ html, body {
 .main-menu{
     list-style-type: none;
     display: flex;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     justify-content: flex-end;
     align-self: flex-end;
 }
@@ -82,9 +73,6 @@ html, body {
     width: 100%;
     height: 100%;
     display: flex;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     flex-direction:column;
     justify-content: center;
     align-items: center;
@@ -115,9 +103,6 @@ html, body {
 .info-block{
     width: 100%;
     display: flex;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     flex-wrap: wrap;
 }
 
@@ -191,9 +176,6 @@ html, body {
     width: 100%;
     min-height: 520px;
     display: flex;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -203,9 +185,6 @@ html, body {
     width: 30%;
     min-height: 400px;
     display: flex;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     justify-content: center;
     align-items: center;
     flex-direction: column;
