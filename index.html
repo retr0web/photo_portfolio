@@ -8,7 +8,6 @@
 <meta name='theme-color' content='#083358' />       <!-- Colorized tab on smartphone and Tablet -->
 <link rel='stylesheet' href='css/styles.css' />
 <link rel='icon' sizes='192x192' href='images/browser-logo.png' />
-<link rel='stylesheet' href='css/scroll-bar.css'>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
@@ -19,9 +18,9 @@
             <div class='logo-caption'>Photo Portfolio</div>
     </div>
     <div class='small-menu'>
-            <i class="material-icons">menu</i>
+            <i class="material-icons" id='openMenu'>menu</i>
         </div>
-    <nav class='main-nav'>
+    <nav>
         <ul class='main-menu'>
             <li><a>Gallery</a></li>
             <li>Contacts</li>
@@ -30,16 +29,26 @@
     
 </header>
 
+<div class='full-menu' id='fullOverlay'>
+    <span class='closebtn' id='closeMenu'><i class="material-icons">
+        close
+        </i></span>
+    <a class='full-menu-link'>Gallery</a>
+    <a class='full-menu-link'>About</a>
+</div>
+
 <section class='home'>
         <h1 class='main-label'>John Doe</h1>
         <h2 class='sub-label'>Photographer & Web designer</h2>
 </section>
 
-<section class='info-block'> 
+<section class='info-block bg-1'> 
     <div class='info-block-image'>
-        <img src='images/john-doe.jpg' class='block-image'/>
+        <img src='images/john-doe.jpg' srcset='images/john-doe.jpg 1x, 
+                                        images/john-doe-big.jpg 2x'
+                                        class='block-image'/>
     </div>
-    <div class='info-block-item bg-1'>
+    <div class='info-block-item'>
         <h1 class='info-block-h1'>Hi! My name is John Doe.</h1>
         <h2 class='info-block-h2'>A photographer and web designer.</h2>
         <p class='info-block-p'>I've started my carreer as phtographer since 1998.
@@ -90,21 +99,23 @@
     </div>
 </section>
 
-<section class='info-block'>
-    <div class='info-block-item bg-2'>
+<section class='info-block bg-2'>
+    <div class='info-block-item'>
         <h1 class='info-block-h1'>Welcome to my studio!</h1>
         <h2 class='info-block-h2'>A place where magic happens.</h2>
         <p class='info-block-p'>Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Hic ducimus autem magnam nihil laudantium! Aut harum, reiciendis
-                cupiditate laudantium totam ratione voluptatem at dolores culpa illo
-                deleniti praesentium debitis, repudiandae nihil quam rem natus fugiat.
-                Tempora, dolore? Voluptates praesentium exercitationem id sed error eos
-                 corporis accusantium maxime! Ut nulla nihil ea debitis voluptatibus omnis
-                  facere deleniti, aspernatur modi, quam placeat?</p>
+             elit. Hic ducimus autem magnam nihil laudantium! Aut harum, reiciendis
+             cupiditate laudantium totam ratione voluptatem at dolores culpa illo
+             deleniti praesentium debitis, repudiandae nihil quam rem natus fugiat.
+             Tempora, dolore? Voluptates praesentium exercitationem id sed error eos
+              corporis accusantium maxime! Ut nulla nihil ea debitis voluptatibus omnis
+               facere deleniti, aspernatur modi, quam placeat?</p>
     </div>
 
     <div class='info-block-image'>
-            <img src='images/studio1.jpg' class='block-image'/>
+            <img src='images/studio1.webp' 
+            srcset='images/studio1-small.jpg 1x, images/studio1-big.jpg 2x' 
+            class='block-image'/>
         </div>
 </section>
 
@@ -112,7 +123,11 @@
         <h1 class='card-block-h1-red'>Places to 'shoot'</h1>
         <div class='card-container'>
             <div class='card'>
-                <img src='images/studio2.jpg' class='card-image-rounded' />
+                <picture>
+                    <source type="image/webp" srcset="images/studio2.webp" class='card-image-rounded'>
+                    <source type="image/jpeg" srcset="images/studio2.jpg" class='card-image-rounded'>
+                    <img src='images/studio2.jpg' class='card-image-rounded' />
+                </picture>
                 <h2 class='card-h2-red'>Studio</h2>
                 <p class='card-text-red'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Blanditiis ullam inventore, et nobis mollitia dolor nulla delectus rem expedita!
@@ -123,7 +138,11 @@
             </div>
     
             <div class='card'>
-                <img src='images/outdoors.jpg' class='card-image-rounded' />
+                <picture>
+                    <source type="image/webp" srcset="images/outdoors.webp" class='card-image-rounded'>
+                    <source type="image/jpeg" srcset="images/outdoors.jpg" class='card-image-rounded'>
+                    <img src='images/outdoors.jpg' class='card-image-rounded'/> 
+                </picture>
                 <h2 class='card-h2-red'>Outdoors</h2>
                 <p class='card-text-red'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Blanditiis ullam inventore, et nobis mollitia dolor nulla delectus rem expedita!
