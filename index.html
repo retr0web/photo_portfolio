@@ -5,7 +5,7 @@
 <meta name='Description' content='Author: retr0web, type of site: photo portfolio' />
 <meta charset='utf-8' />
 <meta name='viewport'
-      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+      content='width=device-width, initial-scale=1.0, maximum-scale=5.0' />
 <meta name='theme-color' content='#083358' />       <!-- Colorized tab on smartphone and Tablet -->
 <link rel='stylesheet' href='css/styles.css' />
 <link rel='icon' sizes='192x192' href='images/browser-logo.png' />
@@ -45,9 +45,9 @@
 
 <section class='info-block bg-1'> 
     <div class='info-block-image'>
-        <img src='images/john-doe.jpg' srcset='images/john-doe.jpg 1x, 
-                                        images/john-doe-big.jpg 2x'
-                                        class='block-image'/>
+        <img src='images/john-doe.jpg' 
+        srcset='images/john-doe.jpg 1x, images/john-doe-big.jpg 2x'
+        alt='A man with a cigarette in his lips' class='block-image'/>
     </div>
     <div class='info-block-item'>
         <h1 class='info-block-h1'>Hi! My name is John Doe.</h1>
@@ -65,7 +65,7 @@
     <h1 class='card-block-h1'>My skills</h1>
     <div class='card-container'>
         <div class='card'>
-            <img src='images/camera.svg' class='card-image' />
+            <img src='images/camera.svg' alt='A photo camera' class='card-image' />
             <h2 class='card-h2'>Camera</h2>
             <p class='card-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Blanditiis ullam inventore, et nobis mollitia dolor nulla delectus rem expedita!
@@ -76,7 +76,7 @@
         </div>
 
         <div class='card'>
-            <img src='images/photoshop.svg' class='card-image' />
+            <img src='images/photoshop.svg' alt='adobe photoshop logo' class='card-image' />
             <h2 class='card-h2'>Photoshop</h2>
             <p class='card-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Blanditiis ullam inventore, et nobis mollitia dolor nulla delectus rem expedita!
@@ -87,7 +87,7 @@
         </div>
 
         <div class='card'>
-            <img src='images/website.svg' class='card-image' />
+            <img src='images/website.svg' alt='a picture that shows 2 webpages' class='card-image' />
             <h2 class='card-h2'>Web design</h2>
             <p class='card-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Blanditiis ullam inventore, et nobis mollitia dolor nulla delectus rem expedita!
@@ -114,7 +114,7 @@
     </div>
 
     <div class='info-block-image'>
-            <img src='images/studio1.webp' 
+            <img src='images/studio1.webp' alt='a photo studio' 
             srcset='images/studio1-small.jpg 1x, images/studio1-big.jpg 2x' 
             class='block-image'/>
         </div>
@@ -127,7 +127,7 @@
                 <picture>
                     <source type="image/webp" srcset="images/studio2.webp" class='card-image-rounded'>
                     <source type="image/jpeg" srcset="images/studio2.jpg" class='card-image-rounded'>
-                    <img src='images/studio2.jpg' class='card-image-rounded' />
+                    <img src='images/studio2.jpg' alt='a small photo studio' class='card-image-rounded' />
                 </picture>
                 <h2 class='card-h2-red'>Studio</h2>
                 <p class='card-text-red'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -142,7 +142,8 @@
                 <picture>
                     <source type="image/webp" srcset="images/outdoors.webp" class='card-image-rounded'>
                     <source type="image/jpeg" srcset="images/outdoors.jpg" class='card-image-rounded'>
-                    <img src='images/outdoors.jpg' class='card-image-rounded'/> 
+                    <img src='images/outdoors.jpg' alt='A summer forest with a beautiful lake' 
+                    class='card-image-rounded'/> 
                 </picture>
                 <h2 class='card-h2-red'>Outdoors</h2>
                 <p class='card-text-red'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
