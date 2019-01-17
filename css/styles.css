@@ -43,6 +43,10 @@
       padding-left: 5px;
       color: white;
   }
+
+  .icon {
+    color: white;
+  }
   
   .small-menu{
       align-self: flex-end;
