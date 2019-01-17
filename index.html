@@ -8,6 +8,7 @@
       content='width=device-width, initial-scale=1.0, maximum-scale=5.0' />
 <meta name='theme-color' content='#083358' />       <!-- Colorized tab on smartphone and Tablet -->
 <link rel='stylesheet' href='css/styles.css' />
+<link rel='stylesheet' href='scroll-bar.css' />
 <link rel='icon' sizes='192x192' href='images/browser-logo.png' />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -15,11 +16,11 @@
 <body>
 <header class='main-header'>
     <div class='logo'>
-            <i class="material-icons" style='color: white;'>photo_camera</i>
+            <i class='material-icons icon'>photo_camera</i>
             <div class='logo-caption'>Photo Portfolio</div>
     </div>
     <div class='small-menu'>
-            <i class="material-icons" id='openMenu'>menu</i>
+            <i class='material-icons' id='openMenu'>menu</i>
         </div>
     <nav>
         <ul class='main-menu'>
@@ -31,7 +32,7 @@
 </header>
 
 <div class='full-menu' id='fullOverlay'>
-    <span class='closebtn' id='closeMenu'><i class="material-icons">
+    <span class='closebtn' id='closeMenu'><i class='material-icons'>
         close
         </i></span>
     <a class='full-menu-link'>Gallery</a>
@@ -125,8 +126,8 @@
         <div class='card-container'>
             <div class='card'>
                 <picture>
-                    <source type="image/webp" srcset="images/studio2.webp" class='card-image-rounded'>
-                    <source type="image/jpeg" srcset="images/studio2.jpg" class='card-image-rounded'>
+                    <source type='image/webp' srcset='images/studio2.webp' class='card-image-rounded'>
+                    <source type='image/jpeg' srcset='images/studio2.jpg' class='card-image-rounded'>
                     <img src='images/studio2.jpg' alt='a small photo studio' class='card-image-rounded' />
                 </picture>
                 <h2 class='card-h2-red'>Studio</h2>
@@ -140,8 +141,8 @@
     
             <div class='card'>
                 <picture>
-                    <source type="image/webp" srcset="images/outdoors.webp" class='card-image-rounded'>
-                    <source type="image/jpeg" srcset="images/outdoors.jpg" class='card-image-rounded'>
+                    <source type='image/webp' srcset='images/outdoors.webp' class='card-image-rounded'>
+                    <source type='image/jpeg' srcset='images/outdoors.jpg' class='card-image-rounded'>
                     <img src='images/outdoors.jpg' alt='A summer forest with a beautiful lake' 
                     class='card-image-rounded'/> 
                 </picture>
