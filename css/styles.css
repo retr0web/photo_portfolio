@@ -196,13 +196,13 @@
   }
   
   .info-block-item{
-      height: 430px;
+      height: 400px;
       width: 60%;
       max-width: 845px;
   }
   
   .info-block-image{
-      height: 430px;
+      height: 400px;
       width: 40%;
       max-width: 845px;
       display: flex;
