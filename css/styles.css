@@ -196,13 +196,13 @@
   }
   
   .info-block-item{
-      height: 480px;
+      height: 430px;
       width: 60%;
       max-width: 845px;
   }
   
   .info-block-image{
-      height: 480px;
+      height: 430px;
       width: 40%;
       max-width: 845px;
       display: flex;
@@ -227,6 +227,8 @@
   .block-image{
       max-width: 90%;
       height: 90%;
+      min-width: 260px;
+      min-height: 260px;
       border-radius: 50%;
   }
   
@@ -404,7 +406,7 @@ background-image: linear-gradient(135deg, #0c90fb 30%, #fc3c3c 72%);
       }
   }
   
-  @media only screen and (min-width: 489px) and (max-width: 680px) {
+  @media only screen and (min-width: 489px) and (max-width: 900px) {
     .info-block-item, .info-block-image {
           width: 100%;
       }
