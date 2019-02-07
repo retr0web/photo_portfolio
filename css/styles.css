@@ -558,6 +558,13 @@ background-image: linear-gradient(135deg, #0c90fb 30%, #fc3c3c 72%);
       }
   }
 
+  @media only screen and (max-width: 900px) {
+    .form-container {
+        width: 95%;
+        align-self: center;
+    }
+}
+
   @media only screen and (min-width: 901px) {
     .form-row {
         flex-direction: row;
