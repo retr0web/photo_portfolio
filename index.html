@@ -16,7 +16,7 @@
 <body>
 <header class='main-header'>
     <div class='logo'>
-            <i class='material-icons icon'>photo_camera</i>
+            <i class='material-icons icon-white'>photo_camera</i>
             <div class='logo-caption'>Photo Portfolio</div>
     </div>
     <div class='small-menu'>
@@ -156,6 +156,55 @@
             </div>
         </div>
     </section>
+
+    <section class='info-block-form bg-1'>
+        <div class='form-container'>
+
+            <h2 class='card-block-h2'>
+                Do you want to have a special offer?
+            </h2>
+            <h3 class='card-block-h3'>
+                Then write us every detail you want!
+            </h3>
+
+            <form action='' method='get' class='form-block'>
+                <div class='form-row'>
+                    <label for='full-name'>Name</label>
+                    <input id='full-name' name='full-name' type='text'/>
+                </div>
+
+                <div class='form-row'>
+                    <label for='email'>Email</label>
+                    <input id='email'
+                           name='email'
+                           type='email'
+                           placeholder='joe@example.com'/>
+                </div>
+
+                <div class='form-row'>
+                    <label for='place'>Place</label>
+                    <select id='place' name='place'>
+                      <option value='studio'>Studio</option>
+                      <option value='outdoors'>Outdoors</option>
+                    </select>
+                </div>
+
+                <div class='form-row'>
+                    <label for='abstract'>Abstract</label>
+                    <textarea id='abstract' name='abstract' 
+                    placeholder='add some personal details'></textarea>
+                </div>
+            </form>
+
+            <div class='form-row'>
+                <button>Submit</button>
+              </div>
+        </div>
+    </section>
+
+    <footer class='main-footer'>
+        <h1 class='info-block-h1'>Footer is in process...</h1>
+    </footer>
 <script src='js/main.js'></script>
 </body>
 </html>
