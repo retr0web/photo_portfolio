@@ -21,18 +21,17 @@
     </div>
     <div class='small-menu'>
             <i class='material-icons' id='openMenu'>menu</i>
-        </div>
+    </div>
     <nav>
         <ul class='main-menu'>
             <li><a>Gallery</a></li>
-            <li>Contacts</li>
+            <li><a>About</a></li>
         </ul>
-    </nav>
-    
+    </nav> 
 </header>
 
 <div class='full-menu' id='fullOverlay'>
-    <span class='closebtn' id='closeMenu'><i class='material-icons'>
+    <span class='closebtn' id='closeMenu'><i class='material-icons sight-btn'>
         close
         </i></span>
     <a class='full-menu-link'>Gallery</a>
@@ -203,8 +202,65 @@
     </section>
 
     <footer class='main-footer'>
-        <h1 class='info-block-h1'>Footer is in process...</h1>
+        <div class='contact-info'>
+            <div class='info-text'>Name: John Doe</div>
+            <div class='info-text'>Email: john@example.com</div>
+            <div class='info-text'>Phone: +38000000000</div>
+            <div class='info-text'>Address: QHRC+X7 Pacific Heights,<br/>
+                San-Francisco, California, USA</div>
+        </div>
+
+    <div class='schedule-container'>
+        <div class='schedule-slider'>
+            <div class='schedule-item'>
+                Monday <br/>
+                11AM - 8PM
+            </div>
+            <div class='schedule-item'>
+                Tuesday <br/>
+                11AM - 8PM
+            </div>
+            <div class='schedule-item'>
+                Wednsday <br/>
+                11AM - 8PM
+            </div>
+            <div class='schedule-item'>
+                Thursday <br/>
+                11AM - 8PM
+            </div>
+            <div class='schedule-item'>
+                Friday <br/>
+                11AM - 8PM
+            </div>
+            <div class='schedule-item'>
+                Saturday <br/>
+                1PM - 7PM
+            </div>
+            <div class='schedule-item'>
+                Sunday <br/>
+                2PM - 6PM
+            </div>
+        </div>
+        <h2 class='note-slider'>Swipe right to see other days</h2>
+    </div>
+
+    <div class='map-container'>
+        <div id="map" class='map-card'></div>
+    </div>
+
     </footer>
+
 <script src='js/main.js'></script>
+<script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 37.792437, lng: -122.429283},
+        zoom: 8
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=IzaSyAag4B9BacrA9pcyOkHuu2mww2BvJhZPc8&callback=initMap"
+  async defer></script>
 </body>
 </html>
