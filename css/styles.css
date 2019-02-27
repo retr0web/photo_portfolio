@@ -26,7 +26,8 @@
     align-items: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    position:fixed;
+    position: fixed;
+    z-index: 1;
   }
   
   .logo{
@@ -70,7 +71,7 @@
     -ms-flex-item-align: end;
   }
   
-  .main-menu li, .full-menu-link{
+  .main-menu li a, .full-menu-link{
     background-color: #005096;
     padding: 14px 16px;
     border-radius: 50px;
@@ -90,11 +91,11 @@
       font-size: 1.8em;
   }
   
-  .main-menu li:hover, .full-menu-link li:hover{
+  .main-menu li a:hover, .full-menu-link a:hover{
     background-color: #0b70c5;
   }
 
-  .full-menu{
+  .full-menu {
     height: 0%;
     width: 100%;
     position: fixed;
@@ -123,6 +124,7 @@
     position: absolute;
     top: 1%;
     right: 2%;
+    z-index: 200;
     font-size: 40px;
     width: 48px;
     height: 48px;
@@ -141,7 +143,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
   }
-  
+
   .home{
       background-image: url(../images/wide-john.jpg);
       background-size: 100% 100%;
@@ -412,7 +414,7 @@
   .form-row input[type='text'],
   .form-row input[type='email'],
   .form-row select {
-    max-width: 600px;
+    width: 300px;
     background-color: #e3e5e8;
     border: 3px solid #D6D9DC;
     padding: 7px;
@@ -424,7 +426,7 @@
   }
 
   .form-row textarea {
-    max-width: 600px;
+    width: 300px;
     height: 300px;
     background-color: #e3e5e8;
     border: 3px solid #D6D9DC;
@@ -433,6 +435,7 @@
     outline: none;
     font-family: fredoka, Arial;
     color: #0b70c5;
+    resize: none;
   }
 
   .form-row input[type='text']:focus,
@@ -469,10 +472,85 @@
       min-height: 200px;
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       background-color: #005096;
   }
+
+  .contact-info {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.info-text {
+    color: white;
+    font-size: 18px;
+    font-family: fredoka, Arial;
+    font-weight: 800;
+    word-break: break-all;
+}
+
+.map-container {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+.map-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    z-index: 0;
+}
+
+.contact-info, .schedule-container {
+    margin-right: 10px;
+}
+
+.schedule-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    margin-left: 10px;
+}
+
+
+.schedule-slider {
+    width: 100%;
+    min-height: 55px;
+    overflow-x: auto; 
+    display: flex;
+}
+
+.schedule-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+.schedule-item {
+    width: 150px;
+    height: 100%;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    background-color: #0b70c5;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.main-footer:last-child {
+    margin-right: 0px;
+}
+
+.note-slider {
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: fredoka, Arial;
+}
 
 
   /* background-color: #0c90fb;
@@ -558,10 +636,31 @@ background-image: linear-gradient(135deg, #0c90fb 30%, #fc3c3c 72%);
       }
   }
 
+  @media only screen and (min-width: 1200px) {
+    .schedule-slider {
+        width: 470px;
+    }
+}
+
   @media only screen and (max-width: 900px) {
     .form-container {
         width: 95%;
         align-self: center;
+    }
+
+    .form-row input[type='text'],
+    .form-row input[type='email'],
+    .form-row select,
+    .form-row textarea {
+      width: 100%;
+    }
+
+    .main-footer {
+        flex-direction: column-reverse;
+    }
+
+    .map-card, .schedule-container, .contact-info {
+        margin-bottom: 10px;
     }
 }
 
