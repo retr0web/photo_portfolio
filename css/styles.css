@@ -487,6 +487,7 @@
     font-size: 18px;
     font-family: fredoka, Arial;
     font-weight: 800;
+    letter-spacing: 2px;
     word-break: break-all;
 }
 
@@ -536,6 +537,7 @@
     font-size: 18px;
     font-family: fredoka, Arial;
     font-weight: 800;
+    letter-spacing: 1.5px;
     text-align: center;
     background-color: #0b70c5;
     flex-shrink: 0;
@@ -551,6 +553,8 @@
     color: white;
     font-size: 18px;
     font-family: fredoka, Arial;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 
