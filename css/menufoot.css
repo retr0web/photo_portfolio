@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+      margin: 0;
+      height:100%;
+      width:100%;
+      padding:0;
+  }
+
+  body {
+    background-color: #0b70c5;
+  }
+  
+  .main-header{
+    width: 100%;
+    background-color: #005096;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+	display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+	justify-content:space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .logo{
+      display:flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      padding:14px 22px;
+      margin: 5px 5px;
+  }
+  
+  .logo-caption{
+      font-size: 18px;
+      font-family: fredoka, Arial;
+      padding-left: 5px;
+      color: white;
+  }
+
+  .icon-white {
+    color: white;
+  }
+  
+  .small-menu{
+      align-self: flex-end;
+      -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+      color: white;
+      padding:14px 22px;
+      margin: 5px 5px;
+  }
+  
+  .main-menu{
+    list-style-type: none;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    align-self: flex-end;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+  }
+  
+  .main-menu li a, .full-menu-link{
+    background-color: #005096;
+    padding: 14px 16px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    text-align:center;
+    font-size: 16px;
+    font-family: fredoka, Arial;
+    cursor: pointer;
+    margin: 5px 5px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+
+  .full-menu-link{
+      background-color: #0b70c5;
+      font-size: 1.8em;
+  }
+  
+  .main-menu li a:hover, .full-menu-link a:hover{
+    background-color: #0b70c5;
+  }
+
+  .full-menu {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #005096;
+    background-color: rgba(0, 80, 150, 0.8);
+    overflow-y: hidden;
+    transition: 0.7s;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction:column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+  }
+
+  .full-menu .closebtn {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    z-index: 200;
+    font-size: 40px;
+    width: 48px;
+    height: 48px;
+    padding: 4px;
+    border-radius: 50%;
+    color: white;
+    font-family: Arial;
+    background-color: #005096;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+  }
+
+  .main-footer {
+    min-height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #005096;
+}
+
+.contact-info {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.info-text {
+  color: white;
+  font-size: 18px;
+  font-family: fredoka, Arial;
+  font-weight: 800;
+  letter-spacing: 2px;
+  word-break: break-all;
+}
+
+.map-container {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+}
+
+.map-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  z-index: 0;
+}
+
+.contact-info, .schedule-container {
+  margin-right: 10px;
+}
+
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 310px;
+  margin-left: 10px;
+}
+
+
+.schedule-slider {
+  width: 100%;
+  min-height: 55px;
+  overflow-x: auto; 
+  display: flex;
+}
+
+.schedule-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.schedule-item {
+  width: 150px;
+  height: 100%;
+  border-radius: 25px;
+  color: white;
+  font-size: 18px;
+  font-family: fredoka, Arial;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-align: center;
+  background-color: #0b70c5;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.main-footer:last-child {
+  margin-right: 0px;
+}
+
+.note-slider {
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  font-family: fredoka, Arial;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+@media only screen and (max-width:490px) {
+    .main-nav {
+        visibility:hidden;
+        width: 0px;
+        height: 0px;
+        order: 0;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+
+    .logo{
+        padding: 14px 5px;
+    }
+}
+
+@media only screen and (min-width: 490px) {
+    .small-menu{
+        visibility:hidden;
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+  .schedule-slider {
+      width: 470px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+    .main-footer {
+        flex-direction: column-reverse;
+    }
+
+    .map-card, .schedule-container, .contact-info {
+        margin-bottom: 10px;
+    }
+}
+
+@font-face {
+    font-family: fredoka;
+    src: url(FredokaOne-Regular.ttf);
+    font-display: swap;
+}
