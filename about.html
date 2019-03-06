@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photo Portfolio</title>
+    <meta name='Description' content='Author: retr0web, type of site: photo portfolio' />
+    <meta charset='utf-8' />
+    <meta name='viewport'
+    content='width=device-width, initial-scale=1.0, maximum-scale=5.0' />
+    <meta name='theme-color' content='#083358' />
+    <link rel='stylesheet' href='css/menufoot.css' />
+    <link rel='stylesheet' href='css/about.css' />
+    <link rel='stylesheet' href='css/scroll-bar-2.css' />
+    <link rel='icon' sizes='192x192' href='images/browser-logo.png' />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  </head>
+
+  <body>
+    <header class='main-header'>
+        <div class='logo'>
+                <i class='material-icons icon-white'>photo_camera</i>
+                <div class='logo-caption'>Photo Portfolio</div>
+        </div>
+        <div class='small-menu'>
+                <i class='material-icons' id='openMenu'>menu</i>
+        </div>
+        <nav class='main-nav'>
+            <ul class='main-menu'>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='gallery.html'>Gallery</a></li>
+            </ul>
+        </nav> 
+    </header>
+    
+    <div class='full-menu' id='fullOverlay'>
+        <span class='closebtn' id='closeMenu'><i class='material-icons sight-btn'>
+            close
+            </i></span>
+        <a class='full-menu-link' href='index.html'>Home</a>
+        <a class='full-menu-link' href='gallery.html'>Gallery</a>
+    </div>
+
+    <section class='about'>
+        <div class='card'>
+            <img src='images/retroweb.jpg' alt='me' 
+            class='card-image-rounded'/> 
+            <h2 class='card-block-h1'>About this site</h2>
+            <p class='card-text'>This Photo Portfolio site represents my latest knowledge in web design.<br />
+            And it's my first serious site I've ever made. Made with Flexbox, CSS Grid and little bit of JS.<br />
+            Hope you enjoyed it!<br />
+            retr0web
+            </p>
+        </div>
+    </div>
+    </section>
+
+    <footer class='main-footer'>
+        <div class='contact-info'>
+            <div class='info-text'>Name: John Doe</div>
+            <div class='info-text'>Email: john@example.com</div>
+            <div class='info-text'>Phone: +38000000000</div>
+            <div class='info-text'>Address: QHRC+X7 Pacific Heights,<br/>
+                San-Francisco, California, USA</div>
+        </div>
+
+    <div class='schedule-container'>
+        <div class='schedule-slider'>
+            <div class='schedule-item'>
+                Monday <br/>
+                11AM - 8PM
+            </div>
+            <div class='schedule-item'>
+                Tuesday <br/>
+                11AM - 8PM
+            </div>
+            <div class='schedule-item'>
+                Wednsday <br/>
+                11AM - 8PM
+            </div>
+            <div class='schedule-item'>
+                Thursday <br/>
+                11AM - 8PM
+            </div>
+            <div class='schedule-item'>
+                Friday <br/>
+                11AM - 8PM
+            </div>
+            <div class='schedule-item'>
+                Saturday <br/>
+                1PM - 7PM
+            </div>
+            <div class='schedule-item'>
+                Sunday <br/>
+                2PM - 6PM
+            </div>
+        </div>
+        <h2 class='note-slider'>Swipe right to see other days</h2>
+    </div>
+
+    <div class='map-container'>
+        <div id="map" class='map-card'></div>
+    </div>
+
+    </footer>
+
+    <script src='js/main.js'></script>
+    <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 37.792437, lng: -122.429283},
+        zoom: 8
+      });
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAag4B9BacrA9pcyOkHuu2mww2BvJhZPc8&callback=initMap"
+    async defer></script>
+  </body>
+</html>
